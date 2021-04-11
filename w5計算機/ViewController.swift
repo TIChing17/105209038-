@@ -43,7 +43,7 @@ class ViewController: UIViewController {
             endText = String(endText.prefix(8))
         }
         
-        self.sum.text = endText
+        sum.text = endText
     }
 
   
