@@ -39,8 +39,8 @@ class ViewController: UIViewController {
             endText = "\(number)"
         }
         
-        if endText.count >= 8{
-            endText = String(endText.prefix(8))
+        if endText.count >= 4{
+            endText = String(endText.prefix(4))
         }
         
         sum.text = endText
@@ -170,7 +170,7 @@ class ViewController: UIViewController {
     
     @IBAction func numbers(_ sender: UIButton) {
         
-        guard ((sum.text?.count ?? 0)<8)
+        guard ((sum.text?.count ?? 0)<4)
         else{
             return
         }
